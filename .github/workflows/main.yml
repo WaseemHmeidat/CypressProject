@@ -7,12 +7,16 @@ on:
 
 jobs:
   test:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
       - uses: cypress-io/github-action@v4
         with:
-            record: ture
+          record: true
         env:
-            CYPRESS_RECORD_KEY: 178812d0-1eae-4b5e-960a-489ad2f5016b   
+          CYPRESS_RECORD_KEY: 178812d0-1eae-4b5e-960a-489ad2f5016b
