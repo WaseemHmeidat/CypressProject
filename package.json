@@ -1,0 +1,19 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:report": "npx cypress run --record --key 178812d0-1eae-4b5e-960a-489ad2f5016b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cypress": "^15.10.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0"
+  }
+}
